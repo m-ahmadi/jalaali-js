@@ -23,15 +23,19 @@
   },
   "homepage": "https://github.com/jalaali/jalaali-js",
   "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "babel-plugin-transform-commonjs-es2015-modules": "^4.0.1",
+    "browserify": "^16.5.2",
     "mocha": "^6.2.1",
     "should": "^13.2.3",
-    "browserify": "^16.5.2",
     "terser": "^5.3.3"
   },
   "scripts": {
-    "prepare": "node build-umd.js",
+    "prepare": "node build-umd.js && node build-esm.js",
     "bench": "node bench.js",
     "test": "mocha test.js"
   },
-  "files": ["*"]
+  "files": [
+    "*"
+  ]
 }

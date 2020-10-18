@@ -46,6 +46,12 @@ Or use a CDN:
 
 <script src="https://unpkg.com/jalaali-js/dist/jalaali.js"></script>
 <script src="https://unpkg.com/jalaali-js/dist/jalaali.min.js"></script>
+
+<!-- or using es modules: -->
+<script type="module">
+	import jalaali from 'https://cdn.jsdelivr.net/npm/jalaali-js/dist/jalaali.esm.js';
+	import jalaali from 'https://cdn.jsdelivr.net/npm/jalaali-js/dist/jalaali.esm.min.js';
+</script>
 ```
 
 ## API
